@@ -18,20 +18,6 @@ class myApplications :Application() {
             .build())
 
 
-
-//        ob.saveInBackground(object : SaveCallback {
-//            override fun done(ex: ParseException?) {
-//                if (ex == null) {
-//                    Log.i("Parse Result", "Successful!")
-//                } else {
-//                    Log.i("Parse Result", "Failed" + ex.toString())
-//                }
-//            }
-//        })
-
-
-        
-
         val defaultACL = ParseACL()
         defaultACL.publicReadAccess = true
         defaultACL.publicWriteAccess = true
