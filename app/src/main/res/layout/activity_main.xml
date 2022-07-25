@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/userTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="210dp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/tweetText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tweet Text"
+        app:layout_constraintTop_toBottomOf="@+id/userTextView"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/tweetFetchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tweetFetch"
+        app:layout_constraintEnd_toStartOf="@+id/tweetButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tweetText" />
+
+    <Button
+        android:id="@+id/tweetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tweet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tweetFetchButton"
+        app:layout_constraintTop_toBottomOf="@id/tweetText" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
