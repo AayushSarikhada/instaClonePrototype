@@ -17,7 +17,6 @@ class myApplications :Application() {
             .server("http://34.213.49.191/parse/")
             .build())
 
-
         val defaultACL = ParseACL()
         defaultACL.publicReadAccess = true
         defaultACL.publicWriteAccess = true
